@@ -1,0 +1,248 @@
+body {
+  font-family: 'Puck Medium', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+@font-face {
+  font-family: 'Puck Medium';
+  src: url('puck-medium.woff2') format('woff2'), url('puck-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  color: #ff9800;
+}
+
+header .user {
+  display: flex;
+  align-items: center;
+}
+
+header .user span:first-child {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ff9800;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#c {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: rgb(124, 138, 152);
+}
+
+#v {
+  margin-right: 0px;
+  margin-left: 120px;
+}
+
+#card-1 {
+  width: 300px;
+  height: 350px;
+  font-family: 'Puck Medium', sans-serif;
+}
+
+#card-2 {
+  width: 250px;
+  height: 170px;
+  margin-bottom: 10px;
+}
+
+.view {
+  margin-bottom: 100px;
+}
+
+#card-3 {
+  width: 250px;
+  height: 150px;
+}
+
+#card-4 {
+  width: 400px;
+  height: 400px;
+}
+
+#farm {}
+
+#zero {
+  font-size: 20px;
+}
+
+#zeroo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.icon2 {
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color: #4caf50;
+  font-size: 1rem;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bi-geo-alt {
+  font-size: 1.2rem;
+  color: #333;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.card {
+  background-color: #fff;
+  font-family: 'Puck Medium', sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  margin-top: 40px;
+  color: #ff9800;
+  font-size: 2.5rem;
+  margin-right: 30px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+#h1 {
+  font-size: 29px;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: px;
+}
+
+.separator {
+  margin: 9px 0;
+}
+
+.weather .temperature {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+#temperature {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+#weather-condition {
+  font-size: 18px;
+  font-style: oblique;
+}
+
+#temperature-range {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weather .temperature p {
+  margin: 5px 0;
+}
+
+.expenditure a {
+  color: #4caf50;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.chart {
+  margin-top: 150px;
+  margin-left: 70px;
+}
+
+.chart p {
+  margin: 10px 0;
+  color: #4caf50;
+}
+
+.chart p:nth-child(2) {
+  color: #2196f3;
+}
+
+.chart p:nth-child(3) {
+  color: #ff9800;
+}
+
+.card2 {
+  display: inline-flex;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 200px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-bar {
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.legend-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.bar-income {
+  background-color: #20c997;
+}
+
+.bar-expenses {
+  background-color: #007bff;
+}
+
+.bar-specific-expenses {
+  background-color: #ffa76d;
+}
+

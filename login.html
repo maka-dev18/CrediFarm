@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <img src="farmvault.jpeg" alt="farmvault" class="img" />
+    <div class="login-container">
+      <h2>Welcome, Please sign into your account</h2>
+      <h4 class="sign">Sign in to the FarmVault dashboard</h4>
+      <form class="log">
+        <label for="label">Email/ Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter Email or Username"
+          required
+        />
+
+        <label for="label">Password</label>
+        <div class="password-container">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+          <span class="toggle-password" onclick="togglePasswordVisibility()"
+            >👁️</span
+          >
+        </div>
+
+        <div class="options-container">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Remember Me</label>
+          </div>
+          <a href="forgot.html" class="link forgot-password"
+            >Forgot Password?</a
+          >
+        </div>
+
+        <button type="submit" class="btn">Sign In</button>
+      </form>
+      <p class="acc">
+        Don't have an account?
+        <a href="createaccount.html" class="link">Sign Up</a>
+      </p>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

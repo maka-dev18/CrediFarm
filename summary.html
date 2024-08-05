@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FarmVault Dashboard</title>
+    <link rel="stylesheet" href="summary.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="dashboard">
+        <div class="card weather" id="card-1">
+          <h2 id="h1">Weather</h2>
+          <p id="c">Current weather information</p>
+          <p id="current-date"></p>
+          <p><i class="bi bi-geo-alt"></i> Dunowen, Zimbabwe</p>
+          <li><hr class="separator" /></li>
+          <div class="card2">
+            <span class="icon"> <i class="bi bi-circle-fill"></i> </span>
+            <div class="icon-text">
+              <span>
+                <div class="temperature">
+                  <p id="temperature"></p>
+                  <p id="weather-condition"></p>
+                  <p id="temperature-range"></p>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card expenditure" id="card-2">
+            <h2>Total Expenditure:</h2>
+            <p>USD <b id="zero">0</b></p>
+            <div class="view">
+              <li id="v">
+                <a href="expenses.html">
+                  <span>View All</span>
+                  <span class="icon2"><i class="bi bi-arrow-right"></i></span>
+                </a>
+              </li>
+            </div>
+          </div>
+
+          <div class="card income" id="card-3">
+            <h2>Total Income:</h2>
+            <p>Income from your harvest sales</p>
+            <p>USD <b id="zeroo">0</b></p>
+          </div>
+        </div>
+
+        <div class="card overview" id="card-4">
+          <h2>Overview</h2>
+          <p id="farm">Farm Expense and Income Summary Overview</p>
+
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-bar bar-income"></div>
+              <div class="legend-text">Total Income</div>
+            </div>
+            <div class="legend-item">
+              <div class="legend-bar bar-expenses"></div>
+              <div class="legend-text">General Expenses</div>
+            </div>
+            <div class="legend-item">
+              <div class="legend-bar bar-specific-expenses"></div>
+              <div class="legend-text">Element Specific Expenses</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card employees">
+          <h2>Total Employees</h2>
+          <p>1</p>
+        </div>
+        <div class="card crops">
+          <h2>Crops In Production</h2>
+          <p>0</p>
+        </div>
+        <div class="card yield">
+          <h2>Total Annual Yield (Kgs)</h2>
+          <p>0</p>
+        </div>
+        <div class="card devices">
+          <h2>Activated Devices</h2>
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+    <script src="summary.js"></script>
+  </body>
+</html>

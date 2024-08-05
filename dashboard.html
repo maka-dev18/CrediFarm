@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FarmVault</title>
+    <link rel="stylesheet" href="dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="eAgro logo" class="im" />
+        <span class="toggle-btn" id="toggle-btn"
+          ><i class="bi bi-chevron-left"></i
+        ></span>
+      </div>
+
+      <ul class="menu">
+        <li>
+          <a href="#"
+            ><span class="icon"><i class="bi bi-house"></i></span
+            ><span>Eagro</span></a
+          >
+        </li>
+        <li>
+          <a href="summary.html"
+            ><span class="icon"><i class="bi bi-graph-up"></i></span
+            ><span>Summary</span></a
+          >
+        </li>
+        <li>
+          <a href="Daily.html"
+            ><span class="icon"><i class="bi bi-journal-text"></i></span
+            ><span>Daily Work Reports</span></a
+          >
+        </li>
+        <li class="dropdown">
+          <a href="product.html" class="dropdown-btn"
+            ><span class="icon"><i class="bi bi-cart"></i></span
+            ><span>My Products</span><i class="bi bi-chevron-down"></i
+          ></a>
+          <div class="dropdown-container">
+            <a href="#"
+              ><span class="icon"><i class="bi bi-box-seam"></i></span>Product
+              1</a
+            >
+            <a href="#"
+              ><span class="icon"><i class="bi bi-box-seam"></i></span>Product
+              2</a
+            >
+            <a href="#"
+              ><span class="icon"><i class="bi bi-box-seam"></i></span>Product
+              3</a
+            >
+          </div>
+        </li>
+        <li>
+          <a href="weather.html"
+            ><span class="icon"><i class="bi bi-cloud-sun"></i></span
+            ><span>Weather & Satellite</span></a
+          >
+        </li>
+        <li><hr class="separator" /></li>
+        <li>
+          <a href="staff.html"
+            ><span class="icon"><i class="bi bi-people"></i></span
+            ><span>Farm Staff</span></a
+          >
+        </li>
+        <li>
+          <a href="expenses.html"
+            ><span class="icon"><i class="bi bi-wallet2"></i></span
+            ><span>Expenses</span></a
+          >
+        </li>
+        <li>
+          <a href="settings.html"
+            ><span class="icon"><i class="bi bi-gear"></i></span
+            ><span>Settings</span></a
+          >
+        </li>
+      </ul>
+      <div class="add-farm">
+        <a href="#"
+          ><span class="icon"><i class="bi bi-plus"></i></span
+          ><span>Add New Farm</span></a
+        >
+      </div>
+    </div>
+    <script src="dash.js"></script>
+  </body>
+</html>
