@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Open Field Block</title>
+    <link rel="stylesheet" href="openfields.css" />
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add Open Field Block</h2>
+        <form>
+          <div class="form-group">
+            <label for="blockName">Field Name</label>
+            <input type="text" id="blockName" placeholder="Block Name" />
+            <small>Enter a name for this field</small>
+          </div>
+          <div class="form-group">
+            <label for="blockSize">Block Size</label>
+            <div class="block-size">
+              <input type="number" id="blockSize" value="0" />
+              <select id="sizeUnit">
+                <option value="acres">Acres</option>
+                <option value="hectares">Hectares</option>
+              </select>
+            </div>
+            <small>Enter block's size.</small>
+          </div>
+          <div class="form-group">
+            <label for="dateAdded">Date Added</label>
+            <input type="date" id="dateAdded" value="2024-08-21" />
+            <small>Select a date.</small>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="cancel-btn">Cancel</button>
+            <button type="submit" class="add-btn">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="openfields.js"></script>
+  </body>
+</html>

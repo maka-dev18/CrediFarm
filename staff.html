@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Staff</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="staff.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Farm Staff</h1>
+      <div class="tabs">
+        <button class="tab active" id="activeUsersTab">Active Users</button>
+        <button class="tab" id="invitedUsersTab">
+          Invited Users <span class="badge">0</span>
+        </button>
+      </div>
+      <div class="table-container">
+        <div class="table-header">
+          <div class="search-filter">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search by username..."
+            />
+            <button id="filterButton">Filter</button>
+          </div>
+          <button id="inviteStaffButton">Invite Staff</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email Address</th>
+              <th>Role</th>
+              <th>Join Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="user-info">
+                  <div class="avatar">SC</div>
+                  <div class="user-details">
+                    <span class="user-name">Shammah Chakwizira (You)</span>
+                    <span class="user-email"
+                      >shammahchakwizira304@gmail.com</span
+                    >
+                  </div>
+                </div>
+              </td>
+              <td>shammahchakwizira304@gmail.com</td>
+              <td>Farm Owner</td>
+              <td>26/07/2024</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination-container">
+          <span id="rowsSelected">0 of 1 row(s) selected.</span>
+          <div class="pagination-controls">
+            <span>Page 1 of 1</span>
+            <span>Rows per page</span>
+            <select id="rowsPerPage">
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+            <button class="pagination-button" id="firstPage" disabled>
+              &laquo;
+            </button>
+            <button class="pagination-button" id="prevPage" disabled>
+              &lt;
+            </button>
+            <button class="pagination-button" id="nextPage" disabled>
+              &gt;
+            </button>
+            <button class="pagination-button" id="lastPage" disabled>
+              &raquo;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="staff.js"></script>
+  </body>
+</html>

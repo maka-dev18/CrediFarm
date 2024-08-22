@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Boundaries</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Farm Boundaries</h1>
+      <div class="map-container">
+        <iframe
+          class="map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.338744303496!2d36.7951398!3d-1.2832536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1121d1b59461%3A0xf0b5e9ae7af14d27!2sNairobi!5e0!3m2!1sen!2ske!4v1691415906896!5m2!1sen!2ske"
+        ></iframe>
+      </div>
+      <div class="table-container">
+        <div class="table-header">
+          <input type="text" id="searchInput" placeholder="Search name..." />
+          <button id="createButton">Create Farm Boundary</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Boundary</th>
+              <th>Boundary Name</th>
+              <th>Open Field Name</th>
+              <th>Size</th>
+              <th>Date Created</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" class="no-records">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination-container">
+          <span id="rowsSelected">0 row(s) selected</span>
+          <div class="pagination-controls">
+            <span>Page 1 of 0</span>
+            <span>Rows per page</span>
+            <select id="rowsPerPage">
+              <option value="10">10</option>
+              <option value="20" selected>20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+            <button class="pagination-button" id="prevPage" disabled>
+              &lt;
+            </button>
+            <button class="pagination-button" id="nextPage" disabled>
+              &gt;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

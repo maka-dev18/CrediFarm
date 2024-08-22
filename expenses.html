@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses</title>
+    <link rel="stylesheet" href="expenses.css" />
+  </head>
+  <body>
+    <div class="expenses-container">
+      <h1>Expenses</h1>
+      <div class="summary">
+        <div class="summary-item total-expenses">
+          <span>Total Expenses</span>
+          <span>USD. 0</span>
+        </div>
+        <div class="summary-item general-expenses">
+          <span>General Expenses</span>
+          <span>USD. 0</span>
+        </div>
+        <div class="summary-item farm-element-expenses">
+          <span>Farm Element Expenses</span>
+          <span>USD. 0</span>
+        </div>
+      </div>
+      <div class="tabs">
+        <button class="tab-button active" onclick="showTab('general')">
+          General
+        </button>
+        <button class="tab-button" onclick="showTab('element-specific')">
+          Element Specific
+        </button>
+      </div>
+      <div class="tab-content active" id="general">
+        <div class="filter-section">
+          <input type="text" placeholder="Search category..." id="search" />
+          <button id="filter">Filter</button>
+          <button id="add-expense">Add Expense</button>
+        </div>
+        <table>
+          <thead>
+            <tr class="category">
+              <th>Category</th>
+              <th>Date Created</th>
+              <th>Narration</th>
+              <th>Vendor</th>
+              <th>Amount (USD)</th>
+              <th>Payment Method</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="expense-rows">
+            <tr>
+              <td colspan="7">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <span>Rows per page</span>
+          <select id="rows-per-page">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+          <div class="pagination-buttons">
+            <button disabled>&laquo;</button>
+            <button disabled>&lsaquo;</button>
+            <button disabled>&rsaquo;</button>
+            <button disabled>&raquo;</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="element-specific"><div class="filter-section">
+          <input type="text" placeholder="Search category..." id="search" />
+          <button id="filter">Filter</button>
+          <button id="add-expense">Add Expense</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Farm Element</th>
+              <th>Plant</th>
+              <th>Date Created</th>
+              <th>Narration</th>
+              <th>Vendor</th>
+              <th>Amount (USD)</th>
+              <th>Payment Method</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="expense-rows">
+            <tr>
+              <td colspan="7">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <span>Rows per page</span>
+          <select id="rows-per-page">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+          <div class="pagination-buttons">
+            <button disabled>&laquo;</button>
+            <button disabled>&lsaquo;</button>
+            <button disabled>&rsaquo;</button>
+            <button disabled>&raquo;</button>
+          </div>
+        </div>
+      </div></div>
+    </div>
+    <script src="expenses.js"></script>
+  </body>
+</html>

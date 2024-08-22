@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Greenhouse</title>
+    <link rel="stylesheet" href="shadenets.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Add Shadenet</h2>
+          <span class="close-btn">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="greenhouse-name">Shadenet Name</label>
+              <input
+                type="text"
+                id="greenhouse-name"
+                placeholder="Shadenet Name"
+              />
+              <small>Give a name to your shadenet</small>
+            </div>
+
+            <div class="form-group">
+              <label for="greenhouse-type">Shadenet Type</label>
+              <select id="greenhouse-type">
+                <option value="Metallic">Metallic</option>
+                <option value="Wooden">Wooden</option>
+              </select>
+              <small>Select shadenet type installed in your farm</small>
+            </div>
+
+            <div class="form-group">
+              <label for="greenhouse-size">shadenet Size</label>
+              <div class="size-input">
+                <input type="number" id="greenhouse-size" placeholder="0" />
+                <select>
+                  <option value="Square meters">Square meters</option>
+                  <option value="Square FT">Square FT</option>
+                </select>
+              </div>
+              <small>Enter the size of your shadenet</small>
+            </div>
+
+            <div class="form-group">
+              <label for="date-added">Date Added</label>
+              <input type="date" id="date-added" />
+              <small>Select a date the shadenet was installed</small>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn cancel-btn">Cancel</button>
+              <button type="submit" class="btn add-btn">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="shadenets.js"></script>
+  </body>
+</html>

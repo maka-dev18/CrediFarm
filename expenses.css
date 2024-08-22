@@ -1,0 +1,143 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.expenses-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.category{
+
+  font-weight: light;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+  height: 70%;
+  color: #fff;
+}
+
+.total-expenses {
+  background-color: #670716;
+}
+
+.general-expenses {
+  background-color: #187c03;
+}
+
+.farm-element-expenses {
+  background-color: #670716;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #187c03;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#search {
+  padding: 5px;
+  width: 200px;
+}
+
+#filter,
+#add-expense {
+  padding: 5px 10px;
+  background-color: #841828;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#add-expense {
+  background-color: #187c03;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.pagination-buttons button {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Elements</title>
+    <link rel="stylesheet" href="productFE.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Farm Elements</h2>
+      <div class="tabs">
+        <button class="tab active" onclick="openTab(event, 'greenhouses')">
+          Greenhouses
+        </button>
+        <button class="tab" onclick="openTab(event, 'screenhouses')">
+          Screenhouses
+        </button>
+        <button class="tab" onclick="openTab(event, 'shade-nets')">
+          Shade Nets
+        </button>
+        <button class="tab" onclick="openTab(event, 'open-fields')">
+          Open Fields
+        </button>
+      </div>
+
+      <div id="greenhouses" class="tab-content active">
+        <div class="header">
+          <input type="text" placeholder="Search name..." class="search-box" />
+          <button class="filter-btn">Filter</button>
+          <button
+            class="add-btn"
+            onclick="window.location.href='greenhouse.html'"
+          >
+            Add Greenhouse +
+          </button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date Added</th>
+              <th>Type</th>
+              <th>Size</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" class="no-records">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <span>Page 1 of 0</span>
+          <select>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+          <div class="pagination-controls">
+            <button disabled>&laquo;</button>
+            <button disabled>&lsaquo;</button>
+            <button disabled>&rsaquo;</button>
+            <button disabled>&raquo;</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="screenhouses" class="tab-content">
+        <div class="header">
+          <input type="text" placeholder="Search name..." class="search-box" />
+          <button class="filter-btn">Filter</button>
+          <button class="add-btn">Add Screenhouses +</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date Added</th>
+              <th>Type</th>
+              <th>Size</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" class="no-records">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <span>Page 1 of 0</span>
+          <select>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+          <div class="pagination-controls">
+            <button disabled>&laquo;</button>
+            <button disabled>&lsaquo;</button>
+            <button disabled>&rsaquo;</button>
+            <button disabled>&raquo;</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="shade-nets" class="tab-content">
+        <div class="header">
+          <input type="text" placeholder="Search name..." class="search-box" />
+          <button class="filter-btn">Filter</button>
+          <button class="add-btn">Add Shade Nets +</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date Added</th>
+              <th>Type</th>
+              <th>Size</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" class="no-records">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <span>Page 1 of 0</span>
+          <select>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+          <div class="pagination-controls">
+            <button disabled>&laquo;</button>
+            <button disabled>&lsaquo;</button>
+            <button disabled>&rsaquo;</button>
+            <button disabled>&raquo;</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="open-fields" class="tab-content">
+        <div class="header">
+          <input type="text" placeholder="Search name..." class="search-box" />
+          <button class="filter-btn">Filter</button>
+          <button class="add-btn">Add Open Fields +</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Block Name</th>
+              <th>Date Added</th>
+              <th>Size(Ha)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" class="no-records">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <span>Page 1 of 0</span>
+          <select>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+          <div class="pagination-controls">
+            <button disabled>&laquo;</button>
+            <button disabled>&lsaquo;</button>
+            <button disabled>&rsaquo;</button>
+            <button disabled>&raquo;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="productFE.js"></script>
+  </body>
+</html>

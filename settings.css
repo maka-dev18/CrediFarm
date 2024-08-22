@@ -1,0 +1,216 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.settings-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.settings-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.settings-tabs .tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  position: relative;
+}
+
+.settings-tabs .tab-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #28a745;
+}
+
+.settings-content {
+  margin-top: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.account-info {
+  margin-left: 20px;
+}
+
+.account-info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.account-info p {
+  margin: 2px 0;
+  color: #666;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.personal-info,
+.security,
+.farm-info,
+.farm-location,
+.billing-plan {
+  margin-bottom: 30px;
+}
+
+.personal-info h3,
+.security h3,
+.farm-location h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.edit-btn,
+.update-btn,
+.subscribe-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.password-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.password-row label {
+  width: 150px;
+  font-weight: bold;
+}
+
+.password-row input {
+  flex-grow: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.show-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.farm-location h3 {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.refresh-map {
+  color: #28a745
+  ;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  #map-container {
+    margin-top: 10px;
+  }
+  
+  .billing-plan {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .billing-plan h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .billing-plan p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .billing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .billing-plan ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .billing-plan ul li::before {
+    content: "✔";
+    color: #28a745;
+    margin-right: 10px;
+  }
+
+    #map-container {
+      height: 400px;
+      width: 100%;
+    }

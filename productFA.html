@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fertilizer & Agrochemicals</title>
+    <link rel="stylesheet" href="productFA.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fertilizer & Agrochemicals</h1>
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('fertilizers')">
+          Fertilizers
+        </button>
+        <button class="tab" onclick="showTab('agrochemicals')">
+          Agrochemicals
+        </button>
+      </div>
+
+      <div id="fertilizers" class="tab-content active">
+        <div class="table-controls">
+          <input type="text" class="search-box" placeholder="Search..." />
+          <button class="filter-btn">Filter</button>
+          <button class="add-btn">+ Add Fertilizer</button>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>Name</th>
+              <th>Supplier Name</th>
+              <th>Available Quantity</th>
+              <th>Alert Quantity</th>
+              <th>Date Added</th>
+              <th>Last Updated</th>
+              <th>Current Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="8" class="no-records">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <span>0 of 0 row(s) selected.</span>
+          <div class="pagination-controls">
+            <span>Page 1 of 0</span>
+            <select class="rows-per-page">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+            <button class="pagination-btn">«</button>
+            <button class="pagination-btn">‹</button>
+            <button class="pagination-btn">›</button>
+            <button class="pagination-btn">»</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="agrochemicals" class="tab-content">
+        <div class="table-controls">
+          <input type="text" class="search-box" placeholder="Search..." />
+          <button class="filter-btn">Filter</button>
+          <button class="add-btn">+ Add Agrochemical</button>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>Name</th>
+              <th>Supplier Name</th>
+              <th>Available Quantity</th>
+              <th>Alert Quantity</th>
+              <th>Date Added</th>
+              <th>Last Updated</th>
+              <th>Current Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="8" class="no-records">No records to display.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <span>0 of 0 row(s) selected.</span>
+          <div class="pagination-controls">
+            <span>Page 1 of 0</span>
+            <select class="rows-per-page">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+            <button class="pagination-btn">«</button>
+            <button class="pagination-btn">‹</button>
+            <button class="pagination-btn">›</button>
+            <button class="pagination-btn">»</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="productFA.js"></script>
+  </body>
+</html>

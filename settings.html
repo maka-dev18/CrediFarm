@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <div class="settings-container">
+      <div class="settings-header">
+        <h1>Settings</h1>
+        <ul class="settings-tabs">
+          <li class="tab-item active" data-target="account-details">
+            Account Details
+          </li>
+          <li class="tab-item" data-target="farm-info">Farm Info</li>
+          <li class="tab-item" data-target="billing">
+            Billing and Subscriptions
+          </li>
+        </ul>
+      </div>
+
+      <div class="settings-content">
+        <div id="account-details" class="tab-content active">
+          <div class="account-header">
+            <div class="profile-pic">
+              <img src="placeholder-profile.png" alt="Profile Picture" />
+            </div>
+            <div class="account-info">
+              <h2>Shammah Chakwizira</h2>
+              <p>@sham_sham</p>
+              <p>Joined 26/07/2024</p>
+              <span class="badge">Farm Owner</span>
+            </div>
+          </div>
+
+          <div class="personal-info">
+            <h3>Personal Information</h3>
+            <div class="info-row">
+              <span class="label">Username</span>
+              <span>sham_sham</span>
+            </div>
+            <div class="info-row">
+              <span class="label">First Name</span>
+              <span>Shammah</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Last Name</span>
+              <span>Chakwizira</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Phone Number</span>
+              <span>+254755678908</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Email Address</span>
+              <span>shammahchakwizira304@gmail.com</span>
+            </div>
+            <button class="edit-btn">Edit</button>
+          </div>
+
+          <div class="security">
+            <h3>Security</h3>
+            <div class="password-row">
+              <label>Current Password</label>
+              <input type="password" placeholder="********" />
+              <button class="show-password"></button>
+            </div>
+            <div class="password-row">
+              <label>New Password</label>
+              <input type="password" placeholder="********" />
+              <button class="show-password"></button>
+            </div>
+            <div class="password-row">
+              <label>Confirm New Password</label>
+              <input type="password" placeholder="********" />
+              <button class="show-password"></button>
+            </div>
+            <button class="update-btn">Update</button>
+          </div>
+        </div>
+
+        <div id="farm-info" class="tab-content">
+          <h2>eAgro</h2>
+          <p>Farm currency: USD</p>
+
+          <div class="farm-info">
+            <div class="info-row">
+              <span class="label">Farm Name</span>
+              <span>eAgro</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Country</span>
+              <span>Zimbabwe</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Postal Code</span>
+              <span>203062, Zimbabwe</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Farm Address</span>
+              <span>146 Twinkenharm Harare</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Total Farm Size</span>
+              <span>56.83 Acres</span>
+            </div>
+
+            <button class="edit-btn">Edit Farm details</button>
+          </div>
+
+          <div class="farm-location">
+            <h3>
+              Farm Location <a href="#" class="refresh-map">Refresh Map</a>
+            </h3>
+            <div id="map-container"></div>
+          </div>
+        </div>
+
+        <div id="billing" class="tab-content">
+          <div class="billing-plan">
+            <h3>Free Plan</h3>
+            <p>You are currently on the free plan</p>
+
+            <p>
+              Upgrade today to access more of FarmCloud with features such as:
+            </p>
+            <ul>
+              <li>
+                🌾 <strong>Multiple Farm Management</strong>: Seamlessly manage
+                multiple farms under one account, streamlining your operations
+                and efficiency across your agricultural portfolio.
+              </li>
+              <li>
+                👥 <strong>Collaborative Farming</strong>: Invite farm workers
+                and farm managers to join your farms, fostering collaboration.
+              </li>
+            </ul>
+            <button class="subscribe-btn">Subscribe to a plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="settings.js"></script>
+  </body>
+</html>
